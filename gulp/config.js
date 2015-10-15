@@ -1,13 +1,12 @@
-var path = require('path'),
-	staticPath = 'dist/assets',
+var path = require('path');
+
+var staticPath = 'dist/assets',
 	jsPath = staticPath + '/js',
 	cssPath = staticPath + '/css',
-	fontPath = staticPath + '/fonts',
 	imagesPath = staticPath + '/images'
 
 module.exports = {	
 	images: {
-		src: 'src/images/**/*',
 		src: path.join(__dirname, '../src/images/**/*'),
 		dest: imagesPath
 	},
@@ -22,11 +21,6 @@ module.exports = {
 		prefix: ['last 2 versions'],
 		paths: ['node_modules', 'vendor'],
 		dest: cssPath
-	},
-
-	html: {
-		src: path.join(__dirname, '../src/*.html'),
-		dest: 'dist'
 	},
 
 	jade: {
