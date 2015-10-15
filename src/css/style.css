@@ -1,0 +1,42 @@
+@import "normalize-css/normalize";
+
+@import "utils/body";
+@import "utils/mixins";
+@import "utils/vars";
+@import "utils/fonts";
+@import "utils/index-page";
+@import "utils/dev";
+
+/* global */
+HTML,
+BODY {
+	height: 100%;
+	}
+	BODY {
+		@extend arial;
+		@mixin fs 15px, 20px;
+		}
+
+/* table */
+.table {
+	width: $table-width;
+	
+	TR {
+		&:nth-child(2n + 1) {
+			TD {
+				background: lightgrey;
+				}
+			}
+		}
+		TH,
+		TD {
+			padding: 0 7px;
+			
+			&:first-child {
+				text-align: right;
+				}
+			}
+			TH {
+				text-align: left;
+				}
+	}

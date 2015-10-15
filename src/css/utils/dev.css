@@ -1,0 +1,29 @@
+/* DEV */
+.DEV-page {
+	position: relative;
+	margin: 18px -18px;
+	border-bottom: 1px dashed magenta;
+	
+	SPAN {
+		@extend arial;
+		@mixin fs 11px, 14px;
+		position: absolute;
+		right: 20px;
+		bottom: -1px;
+		padding: 1px 5px;
+		background: magenta;
+		}
+	}
+		
+.TODO {
+	background: yellow;
+	text-align: center;
+	display: table;
+	width: 100%;
+	
+	SPAN {
+		display: table-cell;
+		vertical-align: middle;
+		}
+	}
+	

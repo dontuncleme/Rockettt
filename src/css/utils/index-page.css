@@ -1,0 +1,77 @@
+/* vars */
+$background: #fcfcfa;
+$color: #403333;
+$link: #0086b3;
+
+
+
+/* index-page */
+.index-page {	    
+	@extend antialiased;
+	font-family: "PT Sans", arial, sans-serif;
+	padding: 7em;
+	font-size: 1em;
+	color: $color;
+	line-height: 1.6;
+	background: $background;
+	
+	A {
+		color: $link;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+			}
+		}
+	}
+
+.index {
+	overflow: hidden;
+	}
+	.index__title {
+		font-size: 3em;
+		font-weight: 400;
+		margin: 0;
+		padding: 0 0 1em;
+		}
+	.index__list {
+		list-style: none;
+		padding: 0;
+		margin: 0 7em 0 0;
+		float: left;
+		
+		LI {			
+			I {
+				display: inline-block;
+				vertical-align: baseline;
+				color: #A6A094;
+				font-size: 0.8em;
+				margin-right: .6em;
+				}
+			}
+		}
+	.index__side {
+		overflow: hidden;
+		padding: 0 0 0 2em;
+		}
+		.index__desc {
+			padding-bottom: 2em;
+			
+			P {
+				margin: 0;
+				
+				& + & {
+					margin-top: 1em;
+					}
+				}
+			}
+		.index__links {
+			list-style: none;
+			margin: 0 0 2em;
+			padding: 0;
+			
+			LI {
+				position: relative;
+				margin: 0 0 .5em  0;
+				}
+			}

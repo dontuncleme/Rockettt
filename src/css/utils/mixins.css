@@ -1,0 +1,13 @@
+@define-mixin fs $fs, $lh {
+	font-size: $fs;
+	line-height: $lh;
+	}
+
+@define-mixin wh $w, $h: $w {
+	width: $w;
+	height: $h;
+	}
+	
+@define-mixin rotate $deg {
+	transform: rotate($deg);
+	}

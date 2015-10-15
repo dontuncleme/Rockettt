@@ -1,0 +1,14 @@
+extends tpl/_master.layout.jade
+
+block content
+
+	table.table
+		thead
+			tr
+				th ID
+				th Name
+		tbody
+			each block in table
+				tr
+					td #{block.id}
+					td #{block.name}

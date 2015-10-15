@@ -1,0 +1,8 @@
+@define-extend antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	}
+
+@define-extend arial {
+	font-family: Arial, Helvetica, sans-serif;
+	}
