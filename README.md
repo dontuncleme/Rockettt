@@ -17,9 +17,9 @@ bower i && npm i
 
 ### Used PostCSS plugins
 
-- [postcss-import](https://github.com/postcss/postcss-import)
 - [autoprefixer](https://github.com/postcss/autoprefixer)
 - [cssnano](https://github.com/ben-eb/cssnano)
-- [precss](https://github.com/jonathantneal/precss)
 - [postcss-cssnext](https://github.com/cssnext/postcss-cssnext)
+- [postcss-import](https://github.com/postcss/postcss-import)
 - [postcss-property-lookup](https://github.com/simonsmith/postcss-property-lookup)
+- [precss](https://github.com/jonathantneal/precss)
