@@ -17,16 +17,16 @@
     "main-bower-files": "~2.9.0",
     "require-dir": "~0.3.0",
     "run-sequence": "~1.1.0",
-    "yargs": "~3.27.0"
+    "yargs": "~3.29.0"
   },
   "devDependencies": {
     "autoprefixer": "~6.0.0",
     "browser-sync": "~2.9.0",
     "cssnano": "~3.3.0",
-    "postcss-cssnext": "~2.1.0",
-    "postcss-import": "~7.0.0",
+    "postcss-cssnext": "~2.2.0",
+    "postcss-import": "~7.1.0",
     "postcss-property-lookup": "~1.1.0",
-    "precss": "~1.2.0"
+    "precss": "~1.3.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
