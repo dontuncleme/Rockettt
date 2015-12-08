@@ -7,8 +7,10 @@ gulp.task('server', function() {
 		notify: false,
 		open: false,
 		https: true,
+		reloadOnRestart: false,
 		server: {
-			baseDir: 'dist/'
+			baseDir: 'dist/',
+			directory: true
 		}
 	});
 });
