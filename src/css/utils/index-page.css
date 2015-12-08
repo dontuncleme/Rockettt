@@ -4,9 +4,16 @@ $color: #403333;
 $link: #0086b3;
 
 
+/* fonts */
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'), local('PTSans-Regular'), url(//fonts.gstatic.com/s/ptsans/v8/G0XvmuebhPCfCq4YdUpRgALUuEpTyoUstqEm5AMlJo4.ttf) format('truetype');
+	}
 
 /* index-page */
-.index-page {	    
+.index-page {
 	@extend antialiased;
 	font-family: "PT Sans", arial, sans-serif;
 	padding: 7em;
@@ -40,7 +47,7 @@ $link: #0086b3;
 		margin: 0 7em 0 0;
 		float: left;
 		
-		LI {			
+		LI {
 			I {
 				display: inline-block;
 				vertical-align: baseline;
