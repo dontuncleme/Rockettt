@@ -13,16 +13,16 @@
     "gulp-jade": "~1.1.0",
     "gulp-plumber": "~1.0.0",
     "gulp-postcss": "~6.0.0",
-    "gulp-uglify": "~1.4.0",
+    "gulp-uglify": "~1.5.0",
     "main-bower-files": "~2.9.0",
     "require-dir": "~0.3.0",
     "run-sequence": "~1.1.0",
-    "yargs": "~3.29.0"
+    "yargs": "~3.31.0"
   },
   "devDependencies": {
     "autoprefixer": "~6.1.0",
     "browser-sync": "~2.10.0",
-    "cssnano": "~3.3.0",
+    "cssnano": "~3.4.0",
     "postcss-cssnext": "~2.2.0",
     "postcss-import": "~7.1.0",
     "postcss-property-lookup": "~1.1.0",
