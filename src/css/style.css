@@ -14,7 +14,8 @@ BODY {
 	}
 	BODY {
 		@extend arial;
-		@mixin fs 15px, 20px;
+		font-size: 15px;
+		line-height: 20px;
 		}
 
 /* table */

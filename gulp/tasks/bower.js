@@ -1,10 +1,10 @@
 var config = require('../config').bower,
-	gulp = require('gulp'),
+	argv = require('yargs').argv,
 	bower = require('main-bower-files'),
 	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
+	gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
-	argv = require('yargs').argv;
+	uglify = require('gulp-uglify');
 
 // Minify (Optional argument: --minify)
 gulp.task('bower', function () {

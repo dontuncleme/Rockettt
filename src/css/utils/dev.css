@@ -6,7 +6,8 @@
 	
 	SPAN {
 		@extend arial;
-		@mixin fs 11px, 14px;
+		font-size: 11px;
+		line-height: 14px;
 		position: absolute;
 		right: 20px;
 		bottom: -1px;

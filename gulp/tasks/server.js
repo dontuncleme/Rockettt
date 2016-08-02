@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync');
+	browserSync = require('browser-sync');
 
 gulp.task('server', function() {
 	browserSync.init({
@@ -9,8 +9,7 @@ gulp.task('server', function() {
 		https: true,
 		reloadOnRestart: false,
 		server: {
-			baseDir: 'dist/',
-			directory: true
+			baseDir: 'dist/'
 		}
 	});
 });

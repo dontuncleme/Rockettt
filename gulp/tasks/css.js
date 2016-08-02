@@ -1,28 +1,37 @@
 var config = require('../config').css,
-	gulp = require('gulp'),
+	argv = require('yargs').argv,
 	browserSync = require('browser-sync'),
-	reload = browserSync.reload,
-	plumber = require('gulp-plumber'),
+	gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
-	argv = require('yargs').argv;
+	plumber = require('gulp-plumber'),
+	reload = browserSync.reload;
 
 // PostCSS & plugins
-var postcss = require('gulp-postcss'),
+var autoprefixer = require('autoprefixer'),
 	cssmport = require('postcss-import'),
-	autoprefixer = require('autoprefixer'),
 	cssnano = require('cssnano'),
-	cssnext = require('postcss-cssnext'),
+	fixes = require('postcss-fixes'),
+	minmax = require('postcss-media-minmax'),
+	postcss = require('gulp-postcss'),
 	precss = require('precss'),
-	propertyLookup = require('postcss-property-lookup');
+	propertyLookup = require('postcss-property-lookup'),
+	svg = require('postcss-svg'),
+	willchange = require('postcss-will-change');
 
 // Minify (Optional argument: --minify)
 gulp.task('css', function () {
 	var processors = [
+		autoprefixer({ browsers: config.prefix }),
 		cssmport( {path: config.paths} ),
+		fixes,
+		minmax,
 		precss,
-		cssnext,
 		propertyLookup,
-		autoprefixer({ browsers: config.prefix })
+		svg({
+			ei: false,
+			paths: config.svgPath
+		}),
+		willchange
 	];
 
 	return gulp.src(config.src)

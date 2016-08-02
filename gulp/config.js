@@ -5,7 +5,7 @@ var staticPath = 'dist/assets',
 	cssPath = staticPath + '/css',
 	imagesPath = staticPath + '/images'
 
-module.exports = {	
+module.exports = {
 	images: {
 		src: path.join(__dirname, '../src/images/**/*'),
 		dest: imagesPath
@@ -23,8 +23,8 @@ module.exports = {
 		dest: cssPath
 	},
 
-	jade: {
-		src: path.join(__dirname, '../src/*.jade'),
+	pug: {
+		src: path.join(__dirname, '../src/*.pug'),
 		data: path.join(__dirname, '../src/tpl/data/data.json'),
 		dest: 'dist'
 	},

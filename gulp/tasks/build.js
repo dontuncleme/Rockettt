@@ -3,5 +3,5 @@ var config = require('../config'),
 	run = require('run-sequence');
 
 gulp.task('build', ['clean'], function (done) {
-	run('images', 'bower', 'js', 'jade', 'css', done);
+	run('images', 'bower', 'js', 'pug', 'css', done);
 });

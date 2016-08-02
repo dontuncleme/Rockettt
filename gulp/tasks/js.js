@@ -1,12 +1,12 @@
 var config = require('../config').js,
-	gulp = require('gulp'),
-	concat = require('gulp-concat'),
-	plumber = require('gulp-plumber'),
+	argv = require('yargs').argv,
 	browserSync = require('browser-sync'),
-	reload = browserSync.reload,
-	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
+	gulp = require('gulp'),
 	gulpIf = require('gulp-if'),
-	argv = require('yargs').argv;
+	plumber = require('gulp-plumber'),
+	reload = browserSync.reload,
+	uglify = require('gulp-uglify');
 
 // Minify (Optional argument: --minify)
 gulp.task('js', function () {

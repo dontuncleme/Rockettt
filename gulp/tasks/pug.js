@@ -1,7 +1,7 @@
-var config = require('../config').jade,
+var config = require('../config').pug,
 	gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
-	jade = require('gulp-jade'),
+	pug = require('gulp-pug'),
 	data = require('gulp-data'),
 	gulpIf = require('gulp-if'),
 	argv = require('yargs').argv,
@@ -11,13 +11,13 @@ var config = require('../config').jade,
 	reload = browserSync.reload;
 
 // Minify (Optional argument: --minify)
-gulp.task('jade', function () {
+gulp.task('pug', function () {
 	gulp.src(config.src)
 		.pipe(plumber())
 		.pipe(data(function(file) {
 			return JSON.parse(fs.readFileSync(config.data));
 		}))
-		.pipe(jade({ pretty: true }))
+		.pipe(pug({ pretty: true }))
 		.pipe(gulpIf(
 			argv.minify,
 			htmlmin({
